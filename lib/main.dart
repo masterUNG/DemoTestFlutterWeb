@@ -13,9 +13,6 @@ Future<void> main() async {
   await Firebase.initializeApp().then((value) {
     print('Firebase initial Success');
     runApp(const MyApp());
-  }).catchError((error) {
-    print('Firebase Error ==>> ${error.toString()}');
-    //  runApp(const MyApp());
   });
 }
 
